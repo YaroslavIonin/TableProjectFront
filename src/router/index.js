@@ -1,11 +1,32 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Student from "@/views/Student";
+import CreateStudent from "@/views/CreateStudent";
+import UpdateStudent from "@/views/UpdateStudent";
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/:id',
+    name: 'Student',
+    component: Student,
+    props: true
+  },
+  {
+    path: '/create',
+    name: 'CreateStudent',
+    component: CreateStudent,
+    props: true
+  },
+    {
+    path: '/:id/update',
+    name: 'UpdateStudent',
+    component: UpdateStudent,
+    props: true
   },
   {
     path: '/about',
@@ -17,8 +38,9 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHashHistory(),
+const router = createRouter( {
+
+  history: createWebHistory(),
   routes
 })
 

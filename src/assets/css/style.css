@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/itim-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/itim-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/itim-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/itim-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/itim-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/itim-v10-latin-regular.svg#Itim') format('svg'); /* Legacy iOS */
+  }
+
+  html{
+      box-sizing: border-box;
+  }
+  *,*::before,*::after{
+      box-sizing: inherit;
+  }
+  body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #454545;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+/*HEADER STYLES START*/
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101.42px; 
+    background-color: #5C5C5C;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+}
+.wrapper{
+    margin-top: 20px;
+}
+.wrapper__item{
+    height: 61.42px;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+}
+
+
+/*BOTTON*/
+.menu__item{
+    background: url(../img/svg/menu.svg) no-repeat;
+}
+
+.search__item{
+    width: 666px;
+    background: #E1E1E1 url(../img/svg/search.svg) 98% no-repeat;
+}
+
+.add__item{
+    width: 383px;
+    margin-right: 20px;
+    background: #E1E1E1 url(../img/svg/add_student.svg) 2% no-repeat;
+}
+
+/*БОКОВАЯ ПАНЕЛЬ*/
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.user__info{
+    width: 180px;
+    height: 132px;
+    background: #F0F0F0;
+    border-radius: 10px;
+    padding-left: 0px;
+    text-align: center;
+}
+.email__item{
+    font-size: 16px;
+    line-height: 19px;
+}
+.tables__list{
+    width: 180px;
+    height: 344px;
+    background: #F0F0F0;
+    border-radius: 10px;
+    padding-left: 0px;
+    text-align: center;
+}
+.tables__list-item{
+    width:180px;
+    height: 52px;
+    border-bottom: 2px solid #5C5C5C;
+    text-align: center;
+}
+.tabels{
+    background: #FAE0C8;
+    border-radius: 10px 10px 0px 0px;
+}
+.podgot{
+    height: 84px;
+}
+.kvotniky{
+    background: #B3C4CE;
+}
