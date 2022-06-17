@@ -11,7 +11,7 @@ export default {
 </script>
 <template>
   <transition name="modal-fade">
-    <div class="filter-backdrop" >
+    <div class="filter-backdrop">
       <div class="filter">
         <header class="filter-header" id="modalTitle">
           <slot name="header"></slot>
@@ -42,24 +42,20 @@ export default {
 }
 
 .filter {
+  padding: 10px;
   background: #FFFFFF;
   max-width: 500px;
   box-shadow: 2px 2px 20px 1px;
-  overflow-x: auto;
   display: grid;
+  z-index: 100;
 }
 
 .filter-header,
 .filter-footer {
   padding: 10px;
+  color: rgba(0, 121, 107, 1);
   display: grid;
   grid-template-columns: 9fr 1fr;
-}
-
-.filter-footer1{
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .filter-header {

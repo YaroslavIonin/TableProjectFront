@@ -5,7 +5,8 @@
 <style>
 @import "assets/css/bootstrap.css";
 body{
-  font-family:"Times New Roman", sans-serif;
+  font-family: Roboto, sans-serif;
+  background-color: #F5F5F5;
 }
 </style>
 
